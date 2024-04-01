@@ -1,0 +1,33 @@
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+const Hero = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 2000
+        });
+    }, []);
+
+    return (
+        <div className='h-screen bg-white'>
+            <div className='pt-40 h-screen sm:h-[75vh] bg-gradient-to-b from-violet-600 via-violet-600 to-indigo-600'>
+                <div className="px-10">
+                    <img className="h-8 mb-7" src="/svg/tki.svg" alt="TKI logo" data-aos="fade-right" />
+                    <h1 className="text-4xl font-extrabold pb-5 text-white">{`Temukan era baru pendidikan dengan aplikasi yang memudahkan dan menginspirasi.`.split(' ').map((word, index) => (
+                        <span key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`}>{word} </span>
+                    ))}</h1>
+                </div>
+                <div className="flex items-center justify-center flex-col md:flex-row">
+                    <div className="w-full text-white font-semibold leading-normal text-xl px-10" data-aos="fade-in" data-aos-delay="600">
+                        Layanan Perbankan saat ini bukan hanya Funding - Lending saja, akan tetapi perlu layanan solusi teknologi yang terintegrasi dengan Open Banking Technology
+                    </div>
+                    <div className='w-full'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Hero
