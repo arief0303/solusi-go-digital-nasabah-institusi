@@ -16,14 +16,14 @@ const Benefits = () => {
             <div className='flex flex-col justify-center items-center w-screen pt-10'>
                 <h3 className='text-primary text-4xl pb-8' data-aos="zoom-in">Benefit</h3>
                 <h1 className="text-4xl font-extrabold pb-5 mx-7 text-black">{`Keuntungan Kolaborasi Bank & Partner`.split(' ').map((word, index) => (
-                    <span key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`}>{word} </span>
+                    <span key={index} data-aos="fade-up" data-aos-delay={`${index * 500}`}>{word} </span>
                 ))}
                 </h1>
             </div>
             <div className='flex flex-col sm:flex-row px-5 sm:px-20 pt-5 sm:pt-20'>
                 <div className='w-fit sm:w-full pb-10 sm:pb-0'>
                     {listItems.map((item, index) => (
-                        <div key={index} className='flex items-center' data-aos="zoom-in-right" data-aos-delay={`${index * 300}`}>
+                        <div key={index} className='flex items-center py-2' data-aos="zoom-in-right" data-aos-delay={`${index * 300}`}>
                             <div className='flex-none p-1 rounded-lg bg-slate-400 m-2 w-10 h-10'>
                                 <img className="h-8" src={item.imgSrc} alt="digital card" />
                             </div>
