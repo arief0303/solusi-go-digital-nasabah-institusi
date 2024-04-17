@@ -10,7 +10,6 @@ const index = () => {
     <>
       <Hero />
       <Benefits />
-      <div className='h-20 bg-white'></div> {/* Spacer */}
       <Footer />
     </>
   )
