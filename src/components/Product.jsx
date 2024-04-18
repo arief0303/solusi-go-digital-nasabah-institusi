@@ -140,12 +140,12 @@ const Solution = () => {
                     switch (activeButton) {
                         case 'Universitas':
                             return (
-                                <img src='/images/universitas.webp' alt='universitas' className='h-[400px] w-[600px] object-cover rounded-xl mx-10' />
+                                <img src='/images/universitas.webp' alt='universitas' className='relative h-[400px] w-auto sm:w-2/4 mx-4 object-cover rounded-2xl overflow-hidden' />
                             )
                         case 'Sekolah':
                             return (
-                                <>
-                                    <div className="relative mx-auto sm:mx-0 border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                                <div className='relative h-[400px] w-auto sm:w-2/4 mx-4 pt-10 object-cover rounded-2xl overflow-hidden bg-slate-200'>
+                                    <div className="relative mx-15 sm:mx-0 border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] left-1/2 transform -translate-x-1/2 shadow-offset">
                                         <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
                                         <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
                                         <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
@@ -154,17 +154,17 @@ const Solution = () => {
                                             <img src="/images/pspmobile.webp" className="w-[272px] h-[572px]" alt="" />
                                         </div>
                                     </div>
-                                </>
+                                </div>
                             );
                         case 'Company':
-                            return <img src='/images/company.webp' alt='company' className='h-[400px] w-[600px] object-cover rounded-xl mx-10' />;
+                            return <img src='/images/company.webp' alt='company' className='relative h-[400px] w-auto sm:w-2/4 mx-4 object-cover rounded-2xl overflow-hidden' />;
                         case 'Koperasi':
-                            return <img src='/images/koperasi.webp' alt='koperasi' className='h-[400px] w-[600px] object-cover rounded-xl' />
+                            return <img src='/images/koperasi.webp' alt='koperasi' className='relative h-[400px] w-auto sm:w-2/4 mx-4 object-cover rounded-2xl overflow-hidden' />
                                 ;
                         case 'General':
                             return (
-                                <>
-                                    <div className="relative mx-auto sm:mx-0 border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                                <div className='relative h-[400px] w-auto sm:w-2/4 mx-4 pt-10 object-cover rounded-2xl overflow-hidden bg-slate-200'>
+                                    <div className="relative mx-15 sm:mx-0 border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] left-1/2 transform -translate-x-1/2 shadow-offset">
                                         <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
                                         <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
                                         <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
@@ -173,12 +173,13 @@ const Solution = () => {
                                             <img src="/images/general.webp" className="w-[272px] h-[572px]" alt="" />
                                         </div>
                                     </div>
-                                </>
+                                </div>
                             );
                         default:
                             return (
                                 <>
-                                    <div className="relative mx-auto sm:mx-0 border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+                                    <div className='relative h-[400px] w-screen object-cover rounded-2xl overflow-hidden bg-slate-200 px-0 sm:px-10 sha'>
+                                    <div className="relative mx-15 sm:mx-0 border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] left-1/2 transform -translate-x-1/2 shadow-offset">
                                         <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
                                         <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
                                         <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
@@ -187,12 +188,13 @@ const Solution = () => {
                                             <img src="/images/pspmobile.webp" className="w-[272px] h-[572px]" alt="" />
                                         </div>
                                     </div>
+                                </div>
                                 </>
                             );
                     }
                 })()}
 
-                <div className='w-fit pb-10 pl-10'>
+                <div className='w-fit'>
                     {listItemsMap[activeButton].map((item, index) => (
                         <div key={index} className='flex items-center py-4' data-aos="zoom-in-right" data-aos-delay={`${index * 300}`}>
                             <div className='flex-none p-1 rounded-lg bg-white m-2 w-10 h-10'>
