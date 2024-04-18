@@ -112,7 +112,7 @@ const Solution = () => {
     };
 
     return (
-        <div className='h-full bg-white py-10 px-0 sm:px-20'>
+        <div className='h-full bg-white py-32 sm:py-60 px-0 sm:px-20'>
             <div className='flex flex-column lg:flex-row'>
                 <div className='flex flex-col lg:flex-row w-full'>
                     <h3 className='text-primary text-4xl mx-7 pb-8' data-aos="zoom-in">Product & Solution</h3>

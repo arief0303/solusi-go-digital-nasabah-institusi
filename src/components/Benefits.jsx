@@ -19,7 +19,7 @@ const Benefits = () => {
     ];
 
     return (
-        <div className='h-full bg-white pt-0 sm:pt-96 py-10 px-0 sm:px-20'>
+        <div className='h-full bg-white pt-5 sm:pt-96 py-10 px-0 sm:px-20'>
             <div className='flex flex-col justify-center items-center w-full py-10'>
                 <h3 className='text-primary text-4xl pb-8' data-aos="zoom-in">Benefit</h3>
                 <h1 className="text-4xl font-extrabold pb-5 mx-7 text-black">{`Keuntungan Kolaborasi Bank & TKI`.split(' ').map((word, index) => (
