@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import Hero from '../components/Hero'
 import Benefits from '../components/Benefits'
 import Product from '../components/Product'
+import Document from '../components/Document'
 import Footer from '../components/Footer'
 
 const index = () => {
@@ -12,6 +13,7 @@ const index = () => {
       <Hero />
       <Benefits />
       <Product />
+      <Document />
       <Footer />
     </>
   )

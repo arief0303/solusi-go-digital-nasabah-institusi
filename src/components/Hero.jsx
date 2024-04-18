@@ -10,16 +10,17 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className='h-screen bg-white'>
-            <div className='pt-40 h-screen sm:h-[75vh] bg-gradient-to-b from-violet-600 via-violet-600 to-indigo-600'>
-                <div className="px-10">
+        <div className='h-full bg-white'>
+            <div className='pt-10 px-20 h-screen sm:h-[34] bg-gradient-to-b from-violet-600 via-violet-600 to-indigo-600'>
+                <div>
                     <img className="h-8 mb-7" src="/svg/tki.svg" alt="TKI logo" data-aos="fade-right" />
                     <h1 className="text-4xl font-extrabold pb-5 text-white">{`Temukan era baru pendidikan dengan aplikasi yang memudahkan dan menginspirasi.`.split(' ').map((word, index) => (
                         <span key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`}>{word} </span>
-                    ))}</h1>
+                    ))}
+                    </h1>
                 </div>
                 <div className="flex items-center justify-center flex-col md:flex-row">
-                    <div className="w-full text-white font-semibold leading-normal text-xl px-10" data-aos="fade-in" data-aos-delay="600">
+                    <div className="pb-10 w-full text-white font-semibold leading-normal text-xl" data-aos="fade-in" data-aos-delay="600">
                         Layanan Perbankan saat ini bukan hanya Funding - Lending saja, akan tetapi perlu layanan solusi teknologi yang terintegrasi dengan Open Banking Technology
                     </div>
                     <div className='w-full'>

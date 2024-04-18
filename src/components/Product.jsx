@@ -17,7 +17,7 @@ const Solution = () => {
         {
             text: 'Platform Sekolah Pintar',
             description: 'Telah Digunakan Lebih Dari 1200 Sekolah.',
-            imgSrc: '/svg/bullet-6.svg',
+            imgSrc: '/svg/check.svg',
             links: [
             ],
         },
@@ -89,14 +89,14 @@ const Solution = () => {
         {
             text: 'General',
             description: 'Beberapa Komunitas Telah Menggunakan Closepay',
-            imgSrc: '/svg/bullet-6.svg',
+            imgSrc: '/svg/check.svg',
             links: [
             ],
         },
         {
             text: 'Flyer General',
             description: '',
-            imgSrc: '/svg/bullet-7.svg',
+            imgSrc: '/svg/check.svg',
             links: [
                 { url: 'https://example.com/link3', text: 'Flyer General' },
             ],
@@ -112,7 +112,7 @@ const Solution = () => {
     };
 
     return (
-        <div className='h-full bg-white py-10'>
+        <div className='h-full bg-white py-10 px-0 sm:px-20'>
             <div className='flex flex-column lg:flex-row'>
                 <div className='flex flex-col lg:flex-row w-full'>
                     <h3 className='text-primary text-4xl mx-7 pb-8' data-aos="zoom-in">Product & Solution</h3>
@@ -120,12 +120,12 @@ const Solution = () => {
                         <span key={index} data-aos="fade-up" data-aos-delay={`${index * 500}`}>{word} </span>
                     ))}
                     </h1>
-                    <div className='flex flex-row flex-wrap h-1/2 w-full justify-center px-24 mt-9'>
+                    <div className='flex flex-row h-1/2 w-full justify-center px-24 mt-9 pb-10'>
                         {buttons.map((button, index) => (
                             <button
                                 key={index}
                                 type="button"
-                                className={`${activeButton === button ? 'textz-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800' : 'text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'}`}
+                                className={`${activeButton === button ? 'w-auto h-10 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-xs px-2 py-0 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800' : 'w-auto h-10 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-xs px-2 py-0.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'}`}
                                 onClick={() => setActiveButton(button)}
                             >
                                 {button}
@@ -179,16 +179,16 @@ const Solution = () => {
                             return (
                                 <>
                                     <div className='relative h-[400px] w-screen object-cover rounded-2xl overflow-hidden bg-slate-200 px-0 sm:px-10 sha'>
-                                    <div className="relative mx-15 sm:mx-0 border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] left-1/2 transform -translate-x-1/2 shadow-offset">
-                                        <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
-                                        <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
-                                        <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
-                                        <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
-                                        <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800">
-                                            <img src="/images/pspmobile.webp" className="w-[272px] h-[572px]" alt="" />
+                                        <div className="relative mx-15 sm:mx-0 border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] left-1/2 transform -translate-x-1/2 shadow-offset">
+                                            <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+                                            <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+                                            <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+                                            <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+                                            <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-gray-800">
+                                                <img src="/images/pspmobile.webp" className="w-[272px] h-[572px]" alt="" />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 </>
                             );
                     }
