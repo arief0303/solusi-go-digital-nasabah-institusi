@@ -17,16 +17,25 @@ const Solution = () => {
         {
             text: 'Platform Sekolah Pintar',
             description: 'Telah Digunakan Lebih Dari 1200 Sekolah.',
-            imgSrc: '/svg/check.svg',
+            imgSrc: '/svg/bullet-6.svg',
             links: [
             ],
         },
         {
             text: 'Flyer Platform Sekolah Pintar',
             description: '',
-            imgSrc: '/svg/bullet-7.svg',
+            imgSrc: '/svg/bullet-9.svg',
             links: [
                 { url: 'https://psp.info.teknologikartu.com/', text: 'Flyer Platform Sekolah Pintar' },
+            ],
+        },
+        {
+            text: 'Materi Platform Sekolah Pintar',
+            description: '',
+            imgSrc: '/svg/bullet-10.svg',
+            links: [
+                { url: 'https://www.canva.com/design/DAF6Gx0mMfo/aUoIsjAgYjtdgSkcouWoJw/view?utm_content=DAF6Gx0mMfo&utm_campaign=designshare&utm_medium=link&utm_source=viewer', text: 'Flyer Platform Sekolah Pintar' },
+                { url: 'https://www.canva.com/design/DAF9OUsD3po/w5X6zrSPAz5bPJPpwklf2A/view', text: 'Flyer Platform Sekolah Pintar Negeri' },
             ],
         },
     ];
@@ -203,11 +212,13 @@ const Solution = () => {
                             <div className='w-80 sm:w-full'>
                                 <h2 className='text-neutral-950 text-xl mb-1'>{item.text}</h2>
                                 {item.description && <p className=' text-neutral-500'>{item.description}</p>}
-                                {item.links && item.links.map((link, index) => (
-                                    <a href={link.url} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mb-4">
-                                        {link.text}
-                                    </a>
-                                ))}
+                                <div className="flex flex-col">
+                                    {item.links && item.links.map((link, index) => (
+                                        <a href={link.url} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mb-4">
+                                            {link.text}
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     ))}
