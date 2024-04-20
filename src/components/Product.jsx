@@ -26,7 +26,7 @@ const Solution = () => {
             description: '',
             imgSrc: '/svg/bullet-7.svg',
             links: [
-                { url: 'https://holistic-overlay-429385.framer.app/', text: 'Flyer B-School' },
+                { url: 'https://psp.info.teknologikartu.com/', text: 'Flyer Platform Sekolah Pintar' },
             ],
         },
     ];
@@ -204,7 +204,7 @@ const Solution = () => {
                                 <h2 className='text-neutral-950 text-xl mb-1'>{item.text}</h2>
                                 {item.description && <p className=' text-neutral-500'>{item.description}</p>}
                                 {item.links && item.links.map((link, index) => (
-                                    <a href='https://holistic-overlay-429385.framer.app/' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mb-4">
+                                    <a href={link.url} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mb-4">
                                         {link.text}
                                     </a>
                                 ))}
