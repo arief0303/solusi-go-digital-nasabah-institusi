@@ -196,15 +196,17 @@ const Solution = () => {
 
                 <div className='w-fit'>
                     {listItemsMap[activeButton].map((item, index) => (
-                        <div key={index} className='flex items-center py-4' data-aos="zoom-in-right" data-aos-delay={`${index * 300}`}>
+                        <div key={index} className='flex items-center mb-5' data-aos="zoom-in-right" data-aos-delay={`${index * 300}`}>
                             <div className='flex-none p-1 rounded-lg bg-white m-2 w-10 h-10'>
                                 <img className="h-8" src={item.imgSrc} alt="digital card" />
                             </div>
                             <div className='w-80 sm:w-full'>
-                                <h2 className='text-neutral-950 text-xl'>{item.text}</h2>
+                                <h2 className='text-neutral-950 text-xl mb-1'>{item.text}</h2>
                                 {item.description && <p className=' text-neutral-500'>{item.description}</p>}
                                 {item.links && item.links.map((link, index) => (
-                                    <a href='https://holistic-overlay-429385.framer.app/' className=" text-blue-700">{link.text}</a>
+                                    <a href='https://holistic-overlay-429385.framer.app/' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mb-4">
+                                        {link.text}
+                                    </a>
                                 ))}
                             </div>
                         </div>
