@@ -1,13 +1,8 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const Solution = () => {
-    useEffect(() => {
-        AOS.init({
-            once: true, // adding this line will cause animations to only run once
-        });
-    }, []);
 
     const [activeButton, setActiveButton] = useState('Sekolah');
 
@@ -38,12 +33,20 @@ const Solution = () => {
                 { url: 'https://www.canva.com/design/DAF9OUsD3po/w5X6zrSPAz5bPJPpwklf2A/view', text: 'Flyer Platform Sekolah Pintar Negeri' },
             ],
         },
+        {
+            text: 'Video Pembelajaran',
+            description: '',
+            imgSrc: '/svg/bullet-11.svg',
+            links: [
+                { url: 'https://www.youtube.com/watch?v=N9WKBr5couA&t=33s', text: 'Digitalisasi Sekolah' },
+            ],
+        },
     ];
 
     const listItemsUniversitas = [
         {
             text: 'Universitas',
-            description: 'Telah Digunakan Lebih Dari 1200 Sekolah.',
+            description: 'Universitas Menggunakan Closepay : IPB, ITS, Untirta, UNS',
             imgSrc: '/svg/bullet-6.svg',
             links: [
             ],
@@ -53,43 +56,83 @@ const Solution = () => {
             description: '',
             imgSrc: '/svg/bullet-7.svg',
             links: [
-                { url: 'https://example.com/link3', text: 'Link 3' },
+                { url: '', text: 'Flyer Universitas (On Progress)' },
+            ],
+        },
+        {
+            text: 'Materi Universitas',
+            description: '',
+            imgSrc: '/svg/bullet-10.svg',
+            links: [
+                { url: 'https://www.canva.com/design/DAF8XHnY7HE/arsNcAvPbDYiY-bk6qJs8Q/view', text: 'Materi Universitas' },
             ],
         },
     ];
 
     const listItemsCompany = [
         {
-            text: 'Universitas',
-            description: 'Telah Digunakan Lebih Dari 1200 Sekolah.',
+            text: 'Perusahaan / Company',
+            description: 'Perusahaan Besar & BUMN Sudah Menggunakan Closepay.',
             imgSrc: '/svg/bullet-6.svg',
             links: [
             ],
         },
         {
-            text: 'Flyer Universitas',
+            text: 'Flyer Perusahaan / Company',
             description: '',
             imgSrc: '/svg/bullet-7.svg',
             links: [
-                { url: 'https://example.com/link3', text: 'Link 3' },
+                { url: '', text: 'Flyer Perusahaan / Company (On Progress)' },
+            ],
+        },
+        {
+            text: 'Materi Perusahaan / Company',
+            description: '',
+            imgSrc: '/svg/bullet-10.svg',
+            links: [
+                { url: 'https://www.canva.com/design/DAF8jYqoL48/ZXDvnbUh18i437fQkQfglw/view', text: 'Materi Perusahaan' },
+            ],
+        },
+        {
+            text: 'Video Pembelajaran',
+            description: '',
+            imgSrc: '/svg/bullet-11.svg',
+            links: [
+                { url: 'https://www.youtube.com/watch?v=FRDp832GChs&t=1s', text: 'Digitalisasi Perusahaan' },
             ],
         },
     ];
 
     const listItemsKoperasi = [
         {
-            text: 'Universitas',
-            description: 'Telah Digunakan Lebih Dari 1200 Sekolah.',
+            text: 'Lembaga Keuangan / Koperasi',
+            description: 'Beberapa Koperasi Telah Menggunakan Closepay.',
             imgSrc: '/svg/bullet-6.svg',
             links: [
             ],
         },
         {
-            text: 'Flyer Universitas',
+            text: 'Flyer Lembaga Keuangan / Koperasi',
             description: '',
             imgSrc: '/svg/bullet-7.svg',
             links: [
-                { url: 'https://example.com/link3', text: 'Link 3' },
+                { url: '', text: 'Flyer Lembaga Keuangan / Koperasi (On Progress)' },
+            ],
+        },
+        {
+            text: 'Materi Lembaga Keuangan / Koperasi',
+            description: '',
+            imgSrc: '/svg/bullet-10.svg',
+            links: [
+                { url: 'https://www.canva.com/design/DAF8jexqomo/FsrGxtE4FG_AiIX95mEOvg/view?utm_content=DAF8jexqomo&utm_campaign=designshare&utm_medium=link&utm_source=editor', text: 'Materi Koperasi' },
+            ],
+        },
+        {
+            text: 'Video Koperasi',
+            description: '',
+            imgSrc: '/svg/bullet-11.svg',
+            links: [
+                { url: '', text: 'Digitalisasi Koperasi (ON PROGRESS)' },
             ],
         },
     ];
@@ -212,9 +255,9 @@ const Solution = () => {
                             <div className='w-80 sm:w-full'>
                                 <h2 className='text-neutral-950 text-xl mb-1'>{item.text}</h2>
                                 {item.description && <p className=' text-neutral-500'>{item.description}</p>}
-                                <div className="flex flex-col">
+                                <div className="flex flex-col mr-10 sm:mr-0">
                                     {item.links && item.links.map((link, index) => (
-                                        <a href={link.url} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mb-4">
+                                        <a href={link.url || '#'} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded mb-4">
                                             {link.text}
                                         </a>
                                     ))}
