@@ -9,7 +9,7 @@ const Benefits = () => {
             once: true, // adding this line will cause animations to only run once
         });
     }, []);
-
+    
     const listItems = [
         { text: 'Dengan solusi GoDigital yang dimiliki, bisa sebagai tools untuk Akuisisi Nasabah', imgSrc: '/svg/bullet-1.svg' },
         { text: 'Membantu mempertahankan Loyalitas Nasabah karena Nasabah merasa terbantu oleh solusi Teknologi dari perbankan.', imgSrc: '/svg/bullet-2.svg' },

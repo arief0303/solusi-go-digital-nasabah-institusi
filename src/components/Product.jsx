@@ -1,6 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Solution = () => {
 
@@ -180,6 +180,18 @@ const Solution = () => {
         Koperasi: listItemsKoperasi,
         General: listItemsGeneral,
     };
+
+    const [listItems, setListItems] = useState(listItemsMap[activeButton]);
+
+    useEffect(() => {
+        setListItems([]);
+        AOS.refresh();
+
+        setTimeout(() => {
+            setListItems(listItemsMap[activeButton]);
+            AOS.refresh();
+        }, 0);
+    }, [activeButton]);
 
     return (
         <div className='h-full bg-white py-32 sm:py-60 px-0 sm:px-20'>

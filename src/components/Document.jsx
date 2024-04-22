@@ -3,6 +3,11 @@ import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
 
 const Document = () => {
+    useEffect(() => {
+        AOS.init({
+            once: true, // adding this line will cause animations to only run once
+        });
+    }, []);
     const [activeButton, setActiveButton] = useState('Form');
     const buttons = ['Form', 'Sales'];
     const listItemsForm = [
