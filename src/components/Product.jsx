@@ -140,17 +140,35 @@ const Solution = () => {
     const listItemsGeneral = [
         {
             text: 'General',
-            description: 'Beberapa Komunitas Telah Menggunakan Closepay',
-            imgSrc: '/svg/check.svg',
+            description: 'Beberapa Komunitas Telah Menggunakan Closepay.',
+            imgSrc: '/svg/bullet-6.svg',
             links: [
             ],
         },
         {
             text: 'Flyer General',
             description: '',
-            imgSrc: '/svg/check.svg',
+            imgSrc: '/svg/bullet-7.svg',
             links: [
-                { url: 'https://example.com/link3', text: 'Flyer General' },
+                { url: 'https://psp.info.teknologikartu.com/', text: 'Flyer General' },
+            ],
+        },
+        {
+            text: 'Materi Lembaga Keuangan / Koperasi',
+            description: '',
+            imgSrc: '/svg/bullet-10.svg',
+            links: [
+                { url: 'https://www.canva.com/design/DAF8jbeOO8U/T1gppchBJY9Q5EqtrkcSdg/view', text: 'Parkir' },
+                { url: 'https://www.canva.com/design/DAF8jTANB28/BoBk12zFmua3iekZ7x7YAg/view', text: 'Wisata' },
+                { url: '', text: 'Membership Khusus(On Progress)' },
+            ],
+        },
+        {
+            text: 'Video Pembelajaran',
+            description: '',
+            imgSrc: '/svg/bullet-11.svg',
+            links: [
+                { url: 'https://www.instagram.com/reel/C3mbIYfrZ2h/?igsh=azJ2b3ZiNXFscHI4', text: 'Digitalisasi Membership ' },
             ],
         },
     ];
