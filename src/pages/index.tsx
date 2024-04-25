@@ -4,8 +4,8 @@ import 'aos/dist/aos.css';
 import Hero from '../components/Hero'
 import Benefits from '../components/Benefits'
 import Product from '../components/Product'
-import Document from '../components/Document'
 import Footer from '../components/Footer'
+import Documentation from '../components/Documentation';
 
 const index = () => {
   return (
@@ -13,7 +13,7 @@ const index = () => {
       <Hero />
       <Benefits />
       <Product />
-      <Document />
+      <Documentation />
       <Footer />
     </>
   )
